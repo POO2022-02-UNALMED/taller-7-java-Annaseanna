@@ -48,12 +48,11 @@ public class Periodico extends Escrito{
 
     @Override
     public String toString() {
-        System.out.println(super.getOrigen());
-        System.out.println(super.getTitulo());
-        System.out.println(super.getAutor());
-        Integer.toString(super.getPaginas());
-        System.out.println(this.fecha);
-        System.out.println(this.primicia);
-        return null;
+        String datos =
+                super.getOrigen() + super.getTitulo() + super.getAutor()+
+                        Integer.toString(super.getPaginas()) +this.fecha+
+                        this.primicia;
+        return datos;
     }
 }
+

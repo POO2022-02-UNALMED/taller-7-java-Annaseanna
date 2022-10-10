@@ -45,4 +45,10 @@ public class Fabula extends Escrito{
         System.out.println(this.ensenanza);
         return null;
     }
+    public String toString() {
+        String datos =
+                super.getOrigen() + super.getTitulo() + super.getAutor()+
+                        Integer.toString(super.getPaginas()) +this.ensenanza;
+        return datos;
+    }
 }
