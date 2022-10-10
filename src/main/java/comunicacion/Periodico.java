@@ -49,8 +49,8 @@ public class Periodico extends Escrito{
     @Override
     public String toString() {
         String datos =
-                super.getOrigen() + super.getTitulo() + super.getAutor()+
-                        Integer.toString(super.getPaginas()) +this.fecha+
+                super.getOrigen() + "\n" +super.getTitulo() + "\n" +super.getAutor()+"\n" +
+                        Integer.toString(super.getPaginas()) +"\n" +this.fecha+"\n" +
                         this.primicia;
         return datos;
     }

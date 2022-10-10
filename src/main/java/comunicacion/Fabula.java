@@ -38,17 +38,9 @@ public class Fabula extends Escrito{
 
     @Override
     public String toString() {
-        System.out.println(super.getOrigen());
-        System.out.println(super.getTitulo());
-        System.out.println(super.getAutor());
-        Integer.toString(super.getPaginas());
-        System.out.println(this.ensenanza);
-        return null;
-    }
-    public String toString() {
         String datos =
-                super.getOrigen() + super.getTitulo() + super.getAutor()+
-                        Integer.toString(super.getPaginas()) +this.ensenanza;
+                super.getOrigen() +"\n" + super.getTitulo() +"\n" + super.getAutor()+"\n" +
+                        Integer.toString(super.getPaginas()) +"\n" +this.ensenanza;
         return datos;
     }
 }

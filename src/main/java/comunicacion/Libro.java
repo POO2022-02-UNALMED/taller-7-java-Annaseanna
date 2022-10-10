@@ -59,9 +59,9 @@ public class Libro extends Escrito{
     @Override
     public String toString() {
         String datos =
-                super.getOrigen() + super.getTitulo() + super.getAutor()+
-                        Integer.toString(super.getPaginas()) +this.co_autor+
-                        this.editorial+this.edicion;
+                super.getOrigen()+"\n" + super.getTitulo() +"\n" + super.getAutor()+
+                        "\n" +Integer.toString(super.getPaginas()) +"\n" +this.co_autor+"\n" +
+                        this.editorial+"\n" +this.edicion;
         return datos;
     }
 }
