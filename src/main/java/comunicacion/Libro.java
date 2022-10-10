@@ -64,5 +64,4 @@ public class Libro extends Escrito{
                         this.editorial+this.edicion;
         return datos;
     }
-    }
 }
