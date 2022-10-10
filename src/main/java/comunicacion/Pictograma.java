@@ -1,3 +1,5 @@
+package comunicacion;
+
 public abstract class Pictograma {
 	
 	private String origen;

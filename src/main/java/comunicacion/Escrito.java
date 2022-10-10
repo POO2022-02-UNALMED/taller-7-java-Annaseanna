@@ -1,3 +1,5 @@
+package comunicacion;
+
 public abstract class Escrito extends Pictograma{
 	
 	private String titulo;
