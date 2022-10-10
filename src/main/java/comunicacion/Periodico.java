@@ -3,7 +3,7 @@ package comunicacion;
 public class Periodico extends Escrito{
     private String fecha;
     private String primicia;
-    private String interpretacion;
+    public String interpretacion;
 
     public Periodico(String origen,String titulo,String autor,int paginas,String fecha,String primicia,String interpretacion){
         super(origen, titulo, autor, paginas);
@@ -37,7 +37,7 @@ public class Periodico extends Escrito{
     }
 
     @Override
-    int palabrasTotales(int palabrasPagina) {
+    public int palabrasTotales(int palabrasPagina) {
         return super.getPaginas() * palabrasPagina * 10;
     }
 

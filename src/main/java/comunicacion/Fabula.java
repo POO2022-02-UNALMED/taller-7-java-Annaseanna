@@ -2,7 +2,7 @@ package comunicacion;
 
 public class Fabula extends Escrito{
     private String ensenanza;
-    private String interpretacion;
+    public String interpretacion;
 
     public Fabula(String origen,String titulo,String autor,int paginas,String ensenanza,String interpretacion){
         super(origen, titulo, autor, paginas);
@@ -27,7 +27,7 @@ public class Fabula extends Escrito{
     }
 
     @Override
-    int palabrasTotales(int palabrasPagina) {
+    public int palabrasTotales(int palabrasPagina) {
         return super.getPaginas() * palabrasPagina * 1;
     }
 
